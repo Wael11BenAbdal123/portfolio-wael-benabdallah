@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Wael Ben Abdallah - Développeur Business Intelligence et Full-Stack">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+    <title>Contact | Wael Ben Abdallah</title>
+    <link rel="stylesheet" href="assets/css/styles.css?v=2.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Fixed Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="index.html" class="logo">WBA</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="about.html" class="nav-link"><i class="fas fa-user"></i> À propos</a></li>
+                    <li><a href="projects.html" class="nav-link"><i class="fas fa-project-diagram"></i> Projets</a></li>
+                    <li><a href="contact.html" class="nav-link active"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Me Contacter</h1>
+            <p>Un projet en tête ou envie de collaborer ? Discutons-en !</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <h2><i class="fas fa-paper-plane"></i> Envoyez-moi un message</h2>
+                    <form action="https://formsubmit.co/benabdallah.wael@isaas.u-sfax.tn" method="POST" id="contactForm" class="contact-form">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="Nouveau message depuis votre Portfolio">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="http://localhost:8000/thank-you.html">
+                        
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Nom</label>
+                            <input type="text" id="name" name="name" required placeholder="Votre nom complet">
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                            <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject"><i class="fas fa-tag"></i> Sujet</label>
+                            <input type="text" id="subject" name="_sujet" required placeholder="Objet de votre message">
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment"></i> Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre projet ou votre demande..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+                
+                <div class="contact-info-wrapper">
+                    <h2><i class="fas fa-address-card"></i> Informations de contact</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localisation</h4>
+                                <p>Sfax, Tunisie</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:benabdallah.wael@isaas.u-sfax.tn" class="contact-link">benabdallah.wael@isaas.u-sfax.tn</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p><a href="tel:+21621780447" class="contact-link">+216 21 780 447</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h4>Disponibilité</h4>
+                                <p>Recherche un stage de 3 mois à partir de février</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h3>Retrouvez-moi sur</h3>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/wael-benabdallah-096758302" target="_blank" class="social-link linkedin" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/Wael11BenAbdal123" target="_blank" class="social-link github" title="GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Questions Fréquentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Êtes-vous disponible pour un stage ?</h3>
+                    <p>Oui, je recherche activement un stage de fin d'études de 3 mois à partir de février dans les domaines du Business Intelligence, développement web ou analyse de données.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Quels types de projets vous intéressent ?</h3>
+                    <p>Je suis particulièrement intéressé par les projets en Business Intelligence, développement web full-stack, analyse de données et création d'applications desktop ou mobile.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Combien de temps pour répondre ?</h3>
+                    <p>Je réponds généralement dans les 24-48 heures. Pour les demandes urgentes, n'hésitez pas à me contacter directement par téléphone.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Travaillez-vous sur des projets freelance ?</h3>
+                    <p>En tant qu'étudiant, je suis ouvert à des projets freelance qui correspondent à mon emploi du temps académique et qui me permettent de développer mes compétences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Wael Ben Abdallah</h3>
+                    <p>Développeur Business Intelligence & Full-Stack</p>
+                    <p class="footer-location"><i class="fas fa-map-marker-alt"></i> Sfax, Tunisie</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="projects.html">Projets</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:benabdallah.wael@isaas.u-sfax.tn">benabdallah.wael@isaas.u-sfax.tn</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+21621780447">+216 21 780 447</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-moi</h4>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/wael-benabdallah-096758302" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Wael11BenAbdal123" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wael Ben Abdallah. Tous droits réservés.</p>
+                <p class="footer-tagline">Conçu avec <i class="fas fa-heart"></i> et passion pour le code propre</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Dark Mode Toggle -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Changer le thème">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

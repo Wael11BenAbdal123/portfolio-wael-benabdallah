@@ -1,0 +1,45 @@
+====================================
+HOW TO CLEAR BROWSER CACHE
+====================================
+
+The CSS changes have been applied, but your browser may be showing old cached styles.
+Please follow these steps to see the fixes:
+
+WINDOWS:
+--------
+Chrome/Edge: Press Ctrl + Shift + Delete OR Ctrl + F5
+Firefox: Press Ctrl + Shift + Delete OR Ctrl + F5
+Opera: Press Ctrl + F5
+
+ALTERNATIVE METHOD (Works for all browsers):
+-------------------------------------------
+1. Press F12 to open Developer Tools
+2. Right-click on the Refresh button
+3. Select "Empty Cache and Hard Reload"
+
+OR
+
+Simply close the browser completely and reopen it, then visit:
+http://localhost:8000
+
+====================================
+WHAT WAS FIXED:
+====================================
+
+✅ Centres d'intérêt (Interests) section on about.html
+   - Section title now visible with gradient effect
+   - Card titles (h3) now dark colored
+   - Card text now light gray
+
+✅ Technologies Utilisées section on projects.html
+   - Section title visible with gradient
+   - Category titles dark colored
+   - Descriptions in light gray
+
+✅ Questions Fréquentes (FAQ) section on contact.html
+   - Section title visible
+   - Question titles dark colored
+   - Answer text in light gray
+
+All text is now properly visible!
+====================================
